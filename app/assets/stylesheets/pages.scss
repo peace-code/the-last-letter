@@ -1,5 +1,9 @@
 #intro-section {
-  padding-top: 100px
+  padding-top: 100px;
+
+  dd a {
+    color: $gray;
+  }
 }
 #comment-form-section {
   border-top: 1px solid $gray;
@@ -7,10 +11,26 @@
 }
 
 #comments-section {
+
   .comments-count-message {
     color: $gray;
+    padding: 10px 0;
   }
   .comments-count {
     color: $gray-lightest;
+  }
+  .comments-list {
+    border-top: 2px solid $gray-lightest;
+    .comment {
+      border-bottom: 1px solid $gray;
+      padding: 10px 0;
+      .media-body p {
+        margin: 5px 0;
+      }
+      .media-right {
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+    }
   }
 }
