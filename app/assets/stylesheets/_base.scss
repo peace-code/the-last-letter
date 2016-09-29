@@ -15,3 +15,14 @@ body {
 .container {
   max-width: 630px !important;
 }
+
+.form-control.error {
+  @extend .has-error;
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    border-width: 3px;
+  }
+}
