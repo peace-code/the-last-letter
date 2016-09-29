@@ -1,4 +1,9 @@
 ko:
+  errors:
+    format: "%{message}"
+  messages:
+    report_success: 신고되었습니다
+    screened_comment: 가려짐
   activerecord:
     models:
       comment: 추모글
@@ -6,3 +11,9 @@ ko:
       comment:
         nickname: 닉네임/이름
         body: 내용
+    errors:
+      models:
+        report:
+          attributes:
+            comment:
+              taken: 이미 신고하셨습니다.

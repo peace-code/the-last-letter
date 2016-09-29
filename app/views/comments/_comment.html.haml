@@ -1,4 +1,8 @@
 %div[comment]
   %h5= comment.nickname
-  %p.lead= simple_format comment.body
+  %p.lead!= screen_body(comment, t('messages.screened_comment'))
   %div= comment.created_at
+
+  %div
+    = link_to '신고', reports_path(comment_id: comment), method: :post, data: { confirm: 'Are you sure?' }
+    = comment.reports_count

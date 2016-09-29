@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160929082014) do
+ActiveRecord::Schema.define(version: 20160929092706) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "nickname"
     t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "reports_count", default: 0
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.integer "comment_id", null: false
+    t.string  "token",      null: false
+    t.index ["comment_id", "token"], name: "index_reports_on_comment_id_and_token", unique: true
+    t.index ["comment_id"], name: "index_reports_on_comment_id"
+    t.index ["token"], name: "index_reports_on_token"
   end
 
 end
