@@ -1,3 +1,16 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#intro-section {
+  padding-top: 100px
+}
+#comment-form-section {
+  border-top: 1px solid $gray;
+  padding: 20px 0;
+}
+
+#comments-section {
+  .comments-count-message {
+    color: $gray;
+  }
+  .comments-count {
+    color: $gray-lightest;
+  }
+}

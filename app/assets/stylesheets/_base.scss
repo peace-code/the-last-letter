@@ -10,5 +10,8 @@ html {
 body {
   padding-top: 50px;
   width: 100%;
-  min-width: 970px;
+}
+
+.container {
+  max-width: 768px !important;
 }

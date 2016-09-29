@@ -1,7 +1,33 @@
-%section
+%section#intro-section
   .container
-    %section
-      = render 'comments/form'
-    %section
+    %h1
+      농민 백남기,
+      %br
+      당신의 모습이 아직
+      %br
+      가슴 속에 선명합니다
+
+    %p
+      2016년 9월 25일,
+      %br
+      온몸으로 국민의 권리를 외치던 사람이 우리 곁을 떠났습니다. 선한 국민, 의로운 농민. 故 백남기 님을 함께 추모해 주세요.
+
+    %dl
+      %dt 관련 링크 가기
+      %dd= link_to '백남기 농민 사망보도', 'http://www.hani.co.kr/arti/society/society_general/762585.html', target: '_blank'
+      %dd= link_to '백남기 대책위 페이스북 페이지', 'https://www.facebook.com/baeknamki1114/', target: '_blank'
+      %dd= link_to '백민주화 씨 JTBC 인터뷰', 'http://news.jtbc.joins.com/article/article.aspx?news_id=NB11322098', target: '_blank'
+      %dd= link_to '백남기 농민 국가폭력 특검도입 진상규명, 책임자 처벌 서명 바로가기', 'baeknamki.kr', target: '_blank'
+
+%section#comments-section
+  .container
+    .comments-count-message
+      현재까지 추모의 글
+      %span.comments-count
+        #{Comment.count}
+      건이 있습니다.
+    .comments-list
       = render @comments
       = paginate @comments
+
+= render 'comments/form'
