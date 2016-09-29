@@ -1,0 +1,8 @@
+ko:
+  activerecord:
+    models:
+      comment: 추모글
+    attributes:
+      comment:
+        nickname: 닉네임/이름
+        body: 내용
