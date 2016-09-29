@@ -29,7 +29,8 @@
         #{Comment.count}
       건이 있습니다.
     .comments-list
-      = render @comments
+      .page
+        = render @comments
       = paginate @comments
 
 = render 'comments/form'
