@@ -7,8 +7,9 @@ gem 'sqlite3'
 gem 'mysql2', '~> 0.4.4'
 gem 'puma', '~> 3.0'
 
-# model
+# paging
 gem 'kaminari', '~> 0.17.0'
+gem 'bootstrap-kaminari-views', '~> 0.0.5'
 
 # ui
 gem 'sass-rails', '~> 5.0'
