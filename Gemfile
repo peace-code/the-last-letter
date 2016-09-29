@@ -27,6 +27,7 @@ gem 'envyable', '~> 1.1'
 gem 'meta-tags', '~> 2.3', '>= 2.3.1'
 gem 'slack-notifier', '~> 1.5', '>= 1.5.1'
 gem 'exception_notification', '~> 4.2', '>= 4.2.1'
+gem 'meta-tags', '~> 2.3', '>= 2.3.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
