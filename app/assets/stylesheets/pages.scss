@@ -1,8 +1,19 @@
+body {
+  background-image: image-url('bg-intro.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 #intro-section {
-  padding-top: 100px;
+  padding-top: 300px;
 
   dd a {
     color: $gray;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .intro-message {
   }
 }
 #comment-form-section {
