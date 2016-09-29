@@ -1,9 +1,10 @@
 .comment[comment]
-  .media
-    .media-body
-      %div= comment.nickname
-      %div= screen_body(comment, t('messages.screened_comment'))
+  .container
+    .media
+      .media-body
+        %div= comment.nickname
+        %div= screen_body(comment, t('messages.screened_comment'))
 
-    .media-right
-      = link_to '신고', reports_path(comment_id: comment), method: :post, data: { confirm: 'Are you sure?' }
-      = comment.reports_count
+      .media-right
+        = link_to '신고', reports_path(comment_id: comment), method: :post, data: { confirm: 'Are you sure?' }
+        = comment.reports_count

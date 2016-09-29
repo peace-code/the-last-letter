@@ -22,15 +22,15 @@
       %dd= link_to '백남기 농민 진상규명 및 책임자 처벌 서명', 'baeknamki.kr', target: '_blank'
 
 %section#comments-section
-  .container
-    .comments-count-message
+  .comments-count-message
+    .container
       현재까지 추모의 글
       %span.comments-count
         #{Comment.count}
       건이 있습니다.
-    .comments-list
-      .page
-        = render @comments
-      = paginate @comments
+  .comments-list
+    .page
+      = render @comments
+    = paginate @comments
 
 = render 'comments/form'

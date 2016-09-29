@@ -13,6 +13,7 @@ body {
   }
 
   dl {
+    margin-top: 30px;
     dt, a {
       font-size: $font-size-small;
     }
@@ -49,6 +50,7 @@ body {
         margin: 5px 0;
       }
       .media-right {
+        font-size: $font-size-small;
         white-space: nowrap;
         vertical-align: middle;
       }
