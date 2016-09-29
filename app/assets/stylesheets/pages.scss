@@ -2,13 +2,22 @@ body {
   background-image: image-url('bg-intro.png');
   background-repeat: no-repeat;
   background-position: center top;
+  @media (max-width: $screen-xs-max) {
+    background-size: contain;
+  }
 }
 #intro-section {
   padding-top: 300px;
+  @media (max-width: $screen-xs-max) {
+    padding-top: 200px;
+  }
 
-  dd a {
-    color: $gray;
-    &:hover {
+  dl {
+    dt, a {
+      font-size: $font-size-small;
+    }
+    a {
+      color: $gray;
       text-decoration: underline;
     }
   }
