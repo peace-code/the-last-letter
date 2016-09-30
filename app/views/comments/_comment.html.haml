@@ -6,5 +6,5 @@
         %div= screen_body(comment, t('messages.screened_comment'))
 
       .media-right
-        = link_to '신고', reports_path(comment_id: comment), method: :post, data: { confirm: 'Are you sure?' }
+        = link_to '신고', reports_path(comment_id: comment), method: :post, data: { confirm: '정말 신고하시겠습니까?' }
         = comment.reports_count
