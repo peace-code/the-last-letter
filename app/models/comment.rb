@@ -5,6 +5,6 @@ class Comment < ApplicationRecord
   REPORT_LIMIT = 10
 
   def screened?
-    reports_count > REPORT_LIMIT
+    reports_count >= REPORT_LIMIT
   end
 end

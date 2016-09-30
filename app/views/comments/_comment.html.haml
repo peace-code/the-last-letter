@@ -2,7 +2,7 @@
   .container
     .media
       .media-body
-        %div= comment.nickname
+        %div= comment.screened? ? t('messages.screened_comment') : comment.nickname
         %div= screen_body(comment, t('messages.screened_comment'))
 
       .media-right

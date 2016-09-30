@@ -3,7 +3,7 @@ ko:
     format: "%{message}"
   messages:
     report_success: 신고되었습니다
-    screened_comment: 가려짐
+    screened_comment: 신고로 가려진 글입니다
   activerecord:
     models:
       comment: 추모글
