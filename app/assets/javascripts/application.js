@@ -16,6 +16,12 @@ $(document).on('ready', function(e) {
     return false;
   });
 
+  $('.btn-hide-form').on('click', function(e) {
+    $('#comment-btn-show-form-box').show();
+    $('#comment-form-box').hide();
+    return false;
+  });
+
   $("section#comments-section .comments-list .page").infinitescroll({
     navSelector: "ul.pagination",
     nextSelector: "ul.pagination a[rel=next]",

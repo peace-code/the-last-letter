@@ -1,9 +1,13 @@
 %section#comment-form-section.navbar.navbar-fixed-bottom.navbar-inverse
   .container
     %div#comment-btn-show-form-box
-      = link_to "#{Comment.count+1}번째 추모의 글 남기기", '#', class: 'btn-show-form btn btn-primary btn-lg btn-block'
+      = link_to '#', class: 'btn-show-form btn btn-primary btn-lg btn-block' do
+        %strong
+          #{Comment.count+1}번째 추모의 글 남기기
 
     %div#comment-form-box{ style: 'display: none' }
+      .pull-right
+        = link_to '닫기', '#', class: 'btn-hide-form'
       = form_for @comment do |f|
         .form-group
           = f.label :nickname
