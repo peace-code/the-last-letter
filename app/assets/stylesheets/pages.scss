@@ -31,8 +31,11 @@ body {
   padding: 20px 0;
 }
 
-#comments-section {
+#comment-form-box {
+  padding: 20px 0;
+}
 
+#comments-section {
   .comments-count-message {
     color: $gray;
     padding: 10px 0;

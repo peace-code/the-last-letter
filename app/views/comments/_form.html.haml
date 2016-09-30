@@ -5,18 +5,19 @@
         %strong
           #{Comment.count+1}번째 추모의 글 남기기
 
-    %div#comment-form-box{ style: 'display: none' }
-      .pull-right
-        = link_to '닫기', '#', class: 'btn-hide-form'
-      = form_for @comment do |f|
-        .form-group
-          = f.label :nickname
-          = f.text_field :nickname, class: 'form-control', data: { 'rule-required': true }
+%div#comment-form-box.navbar.navbar-fixed-top.navbar-inverse{ style: 'display: none' }
+  .container
+    .pull-right
+      = link_to '닫기', '#', class: 'btn-hide-form'
+    = form_for @comment do |f|
+      .form-group
+        = f.label :nickname
+        = f.text_field :nickname, class: 'form-control', data: { 'rule-required': true }
 
-        .form-group
-          = f.label :body
-          = f.text_area :body, placeholder: '추모합니다...', class: 'form-control', data: { 'rule-required': true }
+      .form-group
+        = f.label :body
+        = f.text_area :body, placeholder: '추모합니다...', class: 'form-control', data: { 'rule-required': true }
 
-        .form-group
-          = f.submit '추모의 글 남기기', class: 'btn btn-primary btn-lg btn-block', style: 'font-weight: bold'
+      .form-group
+        = f.submit '추모의 글 남기기', class: 'btn btn-primary btn-lg btn-block', style: 'font-weight: bold'
 
