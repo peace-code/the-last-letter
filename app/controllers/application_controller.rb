@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
       site:        site,
       title:       title,
       reverse:     true,
-      image:       view_context.image_url('social.png'),
+      image:       'http://thelastletter.co/social.png',
       description: desc,
       keywords:    '백남기',
       canonical:   root_url,
@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
         url: root_url,
         site_name: site,
         title: title,
-        image: view_context.image_url('social.png'),
+        image: 'http://thelastletter.co/social.png',
         description: desc,
         type: 'website'
       }
